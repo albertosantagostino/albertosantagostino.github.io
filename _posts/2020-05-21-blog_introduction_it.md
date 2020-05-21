@@ -6,7 +6,7 @@ ref: blog-introduction
 date: 2020-05-21
 ---
 ## Un microblog su cosa? E perchè?
-Molto brevemente, userò questo spazio per parlare di **progetti personali** che ritengo interessante condividere.
+Molto brevemente, userò questo spazio per parlare di **progetti personali** che ritengo interessante condividere.  
 La prima cosa da dire è che tipicamente i miei progetti possono avere due tipi di evoluzione:
 
 {:refdef: style="text-align: center;"}

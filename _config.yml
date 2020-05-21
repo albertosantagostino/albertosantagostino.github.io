@@ -3,9 +3,5 @@ markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 plugins:
 - jekyll-feed
-- jekyll-relative-links
 feed:
   path: rss/atom.xml
-relative_links:
-  enabled:     true
-  collections: false

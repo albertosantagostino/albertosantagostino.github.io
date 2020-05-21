@@ -6,7 +6,7 @@ ref: blog-introduction
 date: 2020-05-21
 ---
 ## A microblog about what? And why?
-Let's keep this short, I will use this space to talk about **personal projects** I consider worth sharing.
+Let's keep this short, I will use this space to talk about **personal projects** I consider worth sharing.  
 First thing to mention: usually my side projects have two possible evolutions:
 
 {:refdef: style="text-align: center;"}
