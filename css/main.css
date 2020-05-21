@@ -1,0 +1,123 @@
+/* Global variables */
+:root {
+    --home_buttons: #777777;
+    --subtitle: #acacac;
+    --paragraph: #333;
+    --footer_line: #d5d5d5;
+    --footer_links: #bbbbbb;
+    --footer_language: #a1a1a1;
+    --home_posts: #226699;
+}
+
+div{
+    text-align: justify;
+    text-justify: inter-word;
+}
+body {
+    margin: 60px auto;
+    width: 65%;
+    background-color: #ffffff;
+}
+nav ul {
+    font-weight: bold;
+}
+nav ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: var(--home_buttons);
+}
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2.2em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+h2 {
+    font-size: 1.5em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+h3 {
+    font-size: 1.2em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+small{
+    font-size: 0.7em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+
+/* Subtitle */
+h5 {
+    margin-top:-25px;
+    font-size: 1em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color: var(--subtitle);
+}
+/* Paragraph */
+p {
+    font-size: 1.1em;
+    line-height: 1.2em;
+    color: var(--paragraph);
+    font-family:'Helvetica', 'Sans-Serif';
+}
+
+/* Footer */
+footer {
+    border-top: 1.2px solid var(--footer_line);
+}
+/* Links */
+.links a{
+    float: left;
+    color: var(--footer_links);
+    margin-right: 5px;
+    font-size: 1em;
+    margin-top: 7px;
+}
+/* Language selector */
+.language li{
+    float: right;
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+a.en:lang(it){
+    color: var(--footer_language);
+}
+a.it:lang(en){
+    color: var(--footer_language);
+}
+a.en:lang(en){
+    display: none;
+}
+a.it:lang(it){
+    display: none;
+}
+
+/* Home posts list */
+ul.posts {
+    margin: 20px auto 30px;
+    font-size: 1.4em;
+}
+ul.posts li {
+    list-style: none;
+}
+ul.posts a{
+    font-family:'Helvetica', 'Sans-Serif';
+    color: var(--home_posts);
+}
+
+ul.menu_right {
+    float: right;
+}
+
+.aligncenter {
+    text-align: center;
+}
