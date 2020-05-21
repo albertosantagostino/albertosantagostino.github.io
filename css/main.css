@@ -111,13 +111,10 @@ ul.posts li {
 }
 ul.posts a{
     font-family:'Helvetica', 'Sans-Serif';
+    font-weight: bold;
     color: var(--home_posts);
 }
 
 ul.menu_right {
     float: right;
-}
-
-.aligncenter {
-    text-align: center;
 }

@@ -6,3 +6,4 @@ git_source(:github) {|repo_name| "https://github.com/albertosantagostino.github.
 
 gem "jekyll"
 gem 'jekyll-feed'
+gem 'jekyll-relative-links'
