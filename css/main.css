@@ -13,11 +13,22 @@ div{
     text-align: justify;
     text-justify: inter-word;
 }
-body {
-    margin: 60px auto;
-    width: 65%;
-    background-color: #ffffff;
+
+@media (min-width: 1200px) {
+    body {
+        margin: 60px auto;
+        width: 65%;
+        background-color: #ffffff;
+    }
 }
+@media only screen and (max-width: 767px) {
+    body {
+        margin: 10px auto;
+        width: 95%;
+        background-color: #ffffff;
+    }
+}
+
 nav ul {
     font-weight: bold;
 }
