@@ -12,14 +12,21 @@
 
 <body>
     <nav>
-        <ul class="menu_right">
-            <li><a href="{{ page.lang | replace: 'it', '/rss/index_it' | replace: 'en', '/rss'}}">Feed 📣</a></li>
-        </ul>
         <ul>
-            <li><a href="{{ page.lang | replace: 'it', '/index_it' | replace: 'en', '/'}}">Blog 📖</a></li>
-            <li><a href="{{ page.lang | replace: 'it', '/about/index_it' | replace: 'en', '/about'}}">About 👤</a></li>
+            <div class="floatleft">
+                <li><a href="{{ page.lang | replace: 'it', '/index_it' | replace: 'en', '/'}}">Blog 📖</a></li>
+                <li><a href="{{ page.lang | replace: 'it', '/about/index_it' | replace: 'en', '/about'}}">About 👤</a></li>
+            </div>
+            <div class="floatright">
+                <li><a href="{{ page.lang | replace: 'it', '/rss/index_it' | replace: 'en', '/rss'}}">Feed 📣</a></li>
+            </div>
         </ul>
     </nav>
+
+    <div class="title">
+        <h1>A pile of endless side projects</h1>
+        <h5>A tiny blog on stuff I do</h5>
+    </div>
 
     <div class="container">
         {{ content }}
