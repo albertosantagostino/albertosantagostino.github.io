@@ -21,6 +21,6 @@ Also, I believe in [rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_
 All posts will be written in both **english** and **italian** (switch language from the bottom right corner).  
 I've also set up a [RSS feed]({{site.url | append: '/rss'}}) for subscription.
 
-There is no specific schedule for new posts, I will write when I have something to talk about! That being said, I hope to publish soon a small article on **ITAQA**, a project that I started recently!
+There is no specific schedule for new posts, I will write when I have something to talk about! That being said, I hope to publish soon an article on **ITAQA**, a project on which I'm working lately!
 
 Thanks for reading!

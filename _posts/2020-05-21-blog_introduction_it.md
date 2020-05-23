@@ -21,6 +21,6 @@ Credo inoltre nel [rubber duck debugging](https://it.wikipedia.org/wiki/Rubber_d
 Tutti i post saranno scritti sia in **italiano** che in **inglese** (si può cambiare la lingua in basso a destra).  
 Ho anche preparato un [feed RSS]({{site.url | append: '/rss/index_it'}}) per iscriversi.
 
-Non c'è alcuna frequenza di pubblicazione dei nuovi post, scriverò quando ho qualcosa da raccontare! In ogni caso, conto di pubblicare a breve un piccolo articolo su **ITAQA**, un progetto su cui sto lavorando di recente.
+Non prevedo di scrivere post con una frequenza ben definita, lo farò quando ho qualcosa da raccontare! In ogni caso, conto di pubblicare a breve un articolo introduttivo su **ITAQA**, un progetto a cui sto lavorando ultimamente.
 
 A presto!
