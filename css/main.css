@@ -186,3 +186,13 @@ ul.posts a{
     font-weight: bold;
     color: var(--home_posts);
 }
+
+/* Responsive images */
+.responsive {
+    width: 100%;
+    height: auto;
+}
+.responsive:hover
+{
+    cursor: pointer;
+}

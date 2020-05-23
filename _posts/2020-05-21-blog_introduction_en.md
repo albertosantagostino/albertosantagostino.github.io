@@ -10,7 +10,7 @@ Let's keep this short, I will use this space to talk about **personal projects**
 First thing to mention: usually my side projects have two possible evolutions:
 
 {:refdef: style="text-align: center;"}
-<img src="{{site.url | append: '/media/20200521/scenario_scheme_en.png'}}" width="1000" title="Scenario A is the most frequent one, in an alternate reality">
+<img src="{{site.url | append: '/media/20200521/scenario_scheme_en.png'}}" title="Scenario A is the most frequent one, in an alternate reality" class="responsive" onclick="window.open(this.src)">
 {: refdef}
 
 Scenario **B** is the one I apply (unwillingly) most of the time. For this reason I will talk about my projects in no specific order and during different stages of ~~neglect~~ development.

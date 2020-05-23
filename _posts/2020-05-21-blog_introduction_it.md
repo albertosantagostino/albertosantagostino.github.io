@@ -10,7 +10,7 @@ Molto brevemente, userò questo spazio per parlare di **progetti personali** che
 La prima cosa da dire è che tipicamente i miei progetti possono avere due tipi di evoluzione:
 
 {:refdef: style="text-align: center;"}
-<img src="{{site.url | append: '/media/20200521/scenario_scheme_it.png'}}" width="1000" title="Lo scenario A capita spessissimo, in una realtà alternativa">
+<img src="{{site.url | append: '/media/20200521/scenario_scheme_it.png'}}" title="Lo scenario A capita spessissimo, in una realtà alternativa" class="responsive" onclick="window.open(this.src)">
 {: refdef}
 
 Scenario **B** è quello che applico più spesso (non volontariamente). Per questa ragione parlerò dei miei progetti in nessun ordine specifico ed in differenti stadi di ~~abbandono~~ sviluppo.
