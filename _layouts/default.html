@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<html>
-
 <html lang="{{ page.lang }}">
 
 <head>
@@ -8,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="shortcut icon" type="image/svg" href="/media/icons/favicon.svg" />
+    {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
 </head>
 
 <body>
@@ -15,7 +16,8 @@
         <ul>
             <div class="floatleft">
                 <li><a href="{{ page.lang | replace: 'it', '/index_it' | replace: 'en', '/'}}">Blog 📖</a></li>
-                <li><a href="{{ page.lang | replace: 'it', '/about/index_it' | replace: 'en', '/about'}}">About 👤</a></li>
+                <li><a href="{{ page.lang | replace: 'it', '/about/index_it' | replace: 'en', '/about'}}">About 👤</a>
+                </li>
             </div>
             <div class="floatright">
                 <li><a href="{{ page.lang | replace: 'it', '/rss/index_it' | replace: 'en', '/rss'}}">Feed 📣</a></li>
@@ -56,8 +58,7 @@
                 <a href="https://github.com/albertosantagostino"><img src='/media/icons/github_logo.png'
                         style='vertical-align: middle' height="20px" /></a>
                 <a href="https://www.linkedin.com/in/alberto-santagostino-4bb081b1"><img
-                        src='/media/icons/linkedin_logo.png' style='vertical-align: middle'
-                        height="20px" /></a>
+                        src='/media/icons/linkedin_logo.png' style='vertical-align: middle' height="20px" /></a>
             </li>
         </ul>
     </footer>

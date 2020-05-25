@@ -54,7 +54,7 @@ div{
 }
 
 /* Mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 999px) {
     body {
         margin: 10px auto;
         width: 95%;
@@ -169,8 +169,8 @@ p {
     line-height: 1.2em;
     color: var(--paragraph);
 }
-p, h1, h2, h3, h4, h5, small, nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+p, h1, h2, h3, h4, h5, small, a, nav ul, footer ul {
+    font-family: 'Helvetica', 'Sans-Serif';
 }
 
 /* Home posts list */
@@ -182,7 +182,6 @@ ul.posts li {
     list-style: none;
 }
 ul.posts a{
-    font-family:'Helvetica', 'Sans-Serif';
     font-weight: bold;
     color: var(--home_posts);
 }
