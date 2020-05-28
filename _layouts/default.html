@@ -13,17 +13,40 @@
 
 <body>
     <nav>
-        <ul>
+        <div>
             <div class="floatleft">
-                <li><a href="{{ page.lang | replace: 'it', '/index_it' | replace: 'en', '/'}}">Blog 📖</a></li>
-                <li><a href="{{ page.lang | replace: 'it', '/about/index_it' | replace: 'en', '/about'}}">About 👤</a>
-                </li>
+                <ul>
+                    <li><a href="{{ page.lang | replace: 'it', '/index_it' | replace: 'en', '/'}}">Blog 📖</a></li>
+                    <li><a href="{{ page.lang | replace: 'it', '/about/index_it' | replace: 'en', '/about'}}">About
+                            👤</a>
+                    <li><a href="{{ page.lang | replace: 'it', '/rss/index_it' | replace: 'en', '/rss'}}">Feed 📣</a>
+                    </li>
+
+                </ul>
             </div>
             <div class="floatright">
-                <li><a href="{{ page.lang | replace: 'it', '/rss/index_it' | replace: 'en', '/rss'}}">Feed 📣</a></li>
+                <ul class="language">
+                    {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+                    {% for page in pages %}
+                    <li>
+                        <a href="{{ page.url }}"
+                            class="{{ page.lang }}">{{ page.lang | replace: 'it', '🇮🇹' | replace: 'en', '🇬🇧'}}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <ul class="language">
+                    {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+                    {% for post in posts %}
+                    <li>
+                        <a href="{{ post.url }}"
+                            class="{{ post.lang }}">{{ post.lang | replace: 'it', '🇮🇹' | replace: 'en', '🇬🇧'}}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
-        </ul>
+        </div>
     </nav>
+
 
     <div class="title">
         <h1>A pile of endless side projects</h1>
@@ -35,32 +58,14 @@
     </div>
 
     <footer>
-        <ul class="language">
-            {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-            {% for page in pages %}
-            <li>
-                <a href="{{ page.url }}"
-                    class="{{ page.lang }}">{{ page.lang | replace: 'it', '🇮🇹' | replace: 'en', '🇬🇧'}}</a>
-            </li>
-            {% endfor %}
-        </ul>
-        <ul class="language">
-            {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-            {% for post in posts %}
-            <li>
-                <a href="{{ post.url }}"
-                    class="{{ post.lang }}">{{ post.lang | replace: 'it', '🇮🇹' | replace: 'en', '🇬🇧'}}</a>
-            </li>
-            {% endfor %}
-        </ul>
-        <ul class="links">
-            <li>
-                <a href="https://github.com/albertosantagostino"><img src='/media/icons/github_logo.png'
-                        style='vertical-align: middle' height="20px" /></a>
-                <a href="https://www.linkedin.com/in/alberto-santagostino-4bb081b1"><img
-                        src='/media/icons/linkedin_logo.png' style='vertical-align: middle' height="20px" /></a>
-            </li>
-        </ul>
+        <div>
+            <p class="floatleft links">
+                <a href="https://github.com/albertosantagostino">
+                    <img src='/media/icons/github_logo.png' style='vertical-align: middle' height="20px" /></a>
+                <a href="https://www.linkedin.com/in/alberto-santagostino-4bb081b1">
+                    <img src='/media/icons/linkedin_logo.png' style='vertical-align: middle' height="20px" /></a></p>
+            <p class="floatright bottomname">Alberto Santagostino</p>
+        </div>
     </footer>
 </body>
 
