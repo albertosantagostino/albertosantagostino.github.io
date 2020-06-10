@@ -95,7 +95,7 @@ div.title {
 @media only screen and (max-width: 999px) {
     body {
         margin: 10px auto;
-        width: 95%;
+        width: 90%;
     }
     p {
         font-size: 1.2em;
@@ -142,7 +142,7 @@ div.title {
     }
     li {
         font-size: 1.2em;
-        margin: 10px 0;
+        margin: 20px 0;
     }
     .links a {
         font-size: 1em;
@@ -234,7 +234,7 @@ a.it:lang(it), a.en:lang(en) {
 
 /* Paragraph */
 p, h1, h2, h3, h4, h5, small, a, nav ul, footer ul, li {
-    font-family: 'Helvetica', 'Sans-Serif';
+    font-family: 'Segoe UI', 'SegoeUI', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 /* Home posts list */
