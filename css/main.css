@@ -26,7 +26,7 @@ div.title {
         margin: 60px auto;
         width: 60%;
     }
-    p {
+    p, code{
         font-size: 1.2em;
         line-height: 1.3em;
     }
@@ -256,4 +256,14 @@ ul.posts a {
 }
 .responsive:hover {
     cursor: pointer;
+}
+
+/* Sup/sub line height fix */
+sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+sub {
+    top: 0.4em;
 }
