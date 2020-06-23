@@ -97,7 +97,7 @@ div.title {
         margin: 10px auto;
         width: 90%;
     }
-    p {
+    p, code {
         font-size: 1.2em;
         line-height: 1.5em;
     }
@@ -162,10 +162,12 @@ div.title {
     }
 }
 
-
 /* Title */
 .title h1 {
     color: #123855;
+}
+.title a:hover {
+    text-decoration: none;
 }
 .title h5 {
     margin-bottom: var(--home_spacing);
@@ -223,13 +225,17 @@ footer {
 .links a {
     float: left;
     color: var(--footer_links);
-    margin-right: 5px;
+    margin-right: 7px;
 }
 .language li {
     float: right;
 }
 a.it:lang(it), a.en:lang(en) {
     opacity: 0.4;
+}
+
+.icon {
+    opacity: 0.3;
 }
 
 /* Paragraph */
