@@ -82,7 +82,7 @@ Ho cercato in giro qualcosa che facesse al caso mio. Non avendo trovato nulla ch
 La libreria si chiama systemd-servicehandler, o più semplicemente **servicehandler**.[^6]
 
 {: style="text-align: center;"}
-<img src="{{site.url | append: '/media/20200628/servicehandler_banner.svg'}}" title="Lo stupendo banner di servicehandler" class="responsive" onclick="window.open(this.src)">
+<img src="{{site.url | append: '/media/20200628/servicehandler_banner.png'}}" title="Lo stupendo banner di servicehandler" class="responsive" onclick="window.open(this.src)">
 
 (Sono molto orgoglioso del banner)
 

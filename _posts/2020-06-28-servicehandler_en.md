@@ -82,7 +82,7 @@ The ones that have already used Python know that there is a library for every ne
 The library is called systemd-servicehandler, or just  **servicehandler**.[^6]
 
 {: style="text-align: center;"}
-<img src="{{site.url | append: '/media/20200628/servicehandler_banner.svg'}}" title="Lo stupendo banner di servicehandler" class="responsive" onclick="window.open(this.src)">
+<img src="{{site.url | append: '/media/20200628/servicehandler_banner.png'}}" title="Lo stupendo banner di servicehandler" class="responsive" onclick="window.open(this.src)">
 
 (I'm very proud of the banner)
 
