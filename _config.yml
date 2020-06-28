@@ -5,3 +5,4 @@ plugins:
 - jekyll-feed
 feed:
   path: rss/atom.xml
+highlighter: rouge

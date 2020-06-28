@@ -1,3 +1,5 @@
+@import "colorful.css";
+
 /* Global variables */
 :root {
     --home_buttons: #777777;
@@ -73,6 +75,9 @@ div.title {
         font-size: 1.2em;
         margin: 5px 0;
     }
+    .footnotes {
+        font-size: 0.6em;
+    }
     .links a {
         font-size: 1em;
     }
@@ -144,6 +149,9 @@ div.title {
         font-size: 1.2em;
         margin: 20px 0;
     }
+    .footnotes {
+        font-size: 0.6em;
+    }
     .links a {
         font-size: 1em;
     }
@@ -182,6 +190,38 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Codeblock */
+.codeblock {
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-left: 3px solid var(--home_posts);
+    /*color: rgb(0, 0, 0);*/
+    page-break-inside: avoid;
+    font-family: monospace;
+    line-height: 1.8;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 0em 2em;
+    display: block;
+    word-wrap: break-word;
+}
+
+/* Quoteblock */
+blockquote {
+    padding: 5px 50px ;
+    background: #fafafa;
+    position: relative;
+    border-radius: 10px;
+    border-color: rgb(136, 136, 136);
+}
+blockquote p {
+    /*font-family: "Utopia-italic";*/
+    font-size: 1.4em;
+    text-align: center;
+    font-family: cursive;
+}
+
 /* Subtitle, date in posts */
 h5, small {
     color: var(--subtitle);
@@ -198,9 +238,20 @@ nav ul, footer ul {
 nav ul li, footer ul li {
     display: inline;
 }
+
 nav ul li {
     padding-right: var(--home_spacing);
 }
+
+ul li {
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+ul li ul li {
+    font-size: 1em;
+}
+
 nav a {
     text-decoration: none;
     color: var(--home_buttons);
@@ -214,6 +265,16 @@ nav a:hover {
 .floatleft {
     float: left;
 }
+
+div.footnotes  {
+    border-top: 1.2px solid var(--hl);
+}
+
+.footnotes {
+    font-style: italic;
+    color: #555555;
+}
+
 footer {
     border-top: 1.2px solid var(--hl);
 }
