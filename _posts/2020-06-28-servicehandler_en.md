@@ -19,10 +19,10 @@ I will probably write about some of these bots in the future, for now I just wan
 
 A bot is a standard application (in this specific case, a Python script). To interact with it at any  time, it needs to be constantly running. Two are the possible solutions:
 
-* **Hosting on external services**
+* **Hosting on external services**  
   Services like [Microsoft Azure](https://azure.microsoft.com/en-us/), [Heroku](https://www.heroku.com/), [OpenShift](https://www.openshift.com/), [Amazon AWS](https://aws.amazon.com/) provide virtual machines (VMs) for different usages, on which is possible to run applications continuously. This alternative is the simplest (the machine is accessible everywhere, always active, with almost no maintenance needed), but it's also limited by reduced performances, a cap on the amount of runnable applications and nerfed responsiveness.
   Although almost all the listed services offer free plans for non-commercial projects, to obtain a machine with better performances a monthly subscription is needed (around ~10€<sub>/month</sub>).
-* **Self hosting on personal hardware**
+* **Self hosting on personal hardware**  
   The "domestic" solution is to dedicate personal hardware for the hosting. This is possible keeping a PC constantly running (may be inconvenient) or using a small low-cost hardware platform, like a single-board computer.
 
 For different reasons[^1] I choose the second solution: hosting using a [**Raspberry PI Zero W**](https://www.raspberrypi.org/products/raspberry-pi-zero-w/). With 512MB of RAM and a 1GHz single-core CPU, it's not exactly a [TOP500](https://it.wikipedia.org/wiki/TOP500) PC, but considering the low amount of resources that my bots need, it's enough. The key points of the Zero are the small size, the built-in WiFi and the possibility to powering it directly through Micro-USB (using a simple phone charger).

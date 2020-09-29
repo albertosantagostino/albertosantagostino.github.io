@@ -77,6 +77,9 @@ div.title {
         font-size: 1.2em;
         margin: 5px 0;
     }
+    ul li{
+        line-height: 1.4em;
+    }
     .footnotes {
         font-size: 0.6em;
     }
@@ -140,15 +143,18 @@ div.title {
     nav ul {
         font-size: .8em;
     }
+    ul li{
+        line-height: 1.5em;
+    }
     ul.posts li small {
         font-size: .8em;
     }
     ul.posts a {
         font-size: 1.1em;
     }
-    li {
+    .posts li {
         font-size: 1.2em;
-        margin: 20px 0;
+        margin: 5px 0;
     }
     .footnotes {
         font-size: 0.6em;
@@ -258,7 +264,6 @@ nav ul li {
 
 ul li {
     font-size: 1.2em;
-    line-height: 1.4em;
     ul li {
         font-size: 1em;
     }

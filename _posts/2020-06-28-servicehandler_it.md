@@ -19,10 +19,10 @@ Alcuni di questi bot saranno probabilmente oggetto di post futuri, per ora però
 
 Un bot è un'applicazione come un'altra (in questo caso specifico, uno script Python). Per poter interagire con essa in qualunque momento, occorre che sia costantemente in esecuzione. Due sono le soluzioni possibili:
 
-* **Hosting su servizi esterni**
+* **Hosting su servizi esterni**  
   Servizi come [Microsoft Azure](https://azure.microsoft.com/en-us/), [Heroku](https://www.heroku.com/), [OpenShift](https://www.openshift.com/), [Amazon AWS](https://aws.amazon.com/) mettono a disposizione macchine virtuali (VMs) per diversi scopi, nelle quali è possibile eseguire applicazioni in modo continuato. Quest'alternativa è indubbiamente la più semplice (la macchina è accessibile ovunque, sempre attiva, con quasi nessuna necessità di manutenzione), ma è anche soggetta a limitazioni quali performance ridotte, un tetto massimo di applicazioni eseguibili in contemporanea, tempi di risposta limitati.
   Sebbene quasi tutti i servizi elencati propongano piani gratuiti per progetti non commerciali, ottenere una macchina con performance migliori significa investire una piccola cifra mensile (nell'ordine di ~10€<sub>/mese</sub>).
-* **Self hosting su hardware personale**
+* **Self hosting su hardware personale**  
   L'alternativa casalinga è utilizzare dell'hardware personale per l'hosting. Ciò è possibile tenendo un computer costantemente acceso (abbastanza scomodo) oppure utilizzando per una piattaforma hardware low-cost e di dimensioni ridotte.
 
 Per diversi motivi[^1] ho optato per la seconda soluzione: hosting su [**Raspberry PI Zero W**](https://www.raspberrypi.org/products/raspberry-pi-zero-w/). Con 512MB di RAM ed una CPU single core da 1GHz, non è esattamente un computer da [TOP500](https://it.wikipedia.org/wiki/TOP500), ma considerando le poche risorse di cui necessitano i miei bot, è abbastanza. I punti forti dello Zero sono l'ingombro minimo, il modulo WiFi integrato e la possibilità di alimentarlo tramite Micro-USB (utilizzando un semplice caricatore da cellulare).
