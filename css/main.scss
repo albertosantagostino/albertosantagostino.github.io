@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "colorful.css";
+@import "code.css";
 @import "table.css";
 
 /* Variables */
@@ -16,20 +16,18 @@ $mobile_video_width: 360px;
 $video_ratio: 0.5625;
 $home_spacing: 20px;
 
-div {
-    text-align: justify;
-    text-justify: inter-word;
-}
-div.title {
-    border-bottom: 1.2px solid $hl;
-}
-
 /* Desktop */
 @media (min-width: 1000px) {
     body {
         margin: 60px auto;
         width: 60%;
         max-width: 90%;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    table {
+        font-size: 1.1em;
     }
     p, code{
         line-height: 1.4em;
@@ -107,6 +105,12 @@ div.title {
         margin: 10px auto;
         width: 90%;
     }
+    p {
+        font-size: 1.1em;
+    }
+    table {
+        font-size: 1.1em;
+    }
     p, code {
         line-height: 1.5em;
     }
@@ -177,11 +181,22 @@ div.title {
     }
 }
 
-p, code {
-    font-size: 1.2em;
+
+/* Paragraph and font family */
+
+p, h1, h2, h3, h4, h5, small, a, nav ul, footer ul, li, th, td {
+    font-family: 'Segoe UI', 'SegoeUI', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 }
 
-figcaption p{
+div {
+    text-align: justify;
+    text-justify: inter-word;
+}
+div.title {
+    border-bottom: 2.0px solid $hl;
+}
+
+figcaption p {
     font-size: 1.2em;
 }
 
@@ -206,27 +221,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Codeblock */
-.codeblock {
-    background: #f7f7f7;
-    border: 1px solid #ddd;
-    border-left: 3px solid $home_posts;
-    /*color: rgb(0, 0, 0);*/
-    page-break-inside: avoid;
-    font-family: monospace;
-    line-height: 1.8;
-    margin-bottom: 1.6em;
-    max-width: 100%;
-    overflow: auto;
-    padding: 0em 2em;
-    display: block;
-    word-wrap: break-word;
-}
-
-code {
-    background: #f1f1f1;
-}
-
 /* Quoteblock */
 blockquote {
     padding: 5px 50px ;
@@ -249,17 +243,17 @@ h5, small {
 /* Navigation bar and footer*/
 nav ul {
     font-weight: bold;
+    li {
+        padding-right: $home_spacing;
+    }
 }
+
 nav ul, footer ul {
     padding-left: 0px;
     list-style: none;
-}
-nav ul li, footer ul li {
-    display: inline;
-}
-
-nav ul li {
-    padding-right: $home_spacing;
+    li {
+        display: inline;
+    }
 }
 
 ul li {
@@ -313,11 +307,6 @@ a.it:lang(it), a.en:lang(en) {
 
 .icon {
     opacity: 0.3;
-}
-
-/* Paragraph */
-p, h1, h2, h3, h4, h5, small, a, nav ul, footer ul, li, th, td {
-    font-family: 'Segoe UI', 'SegoeUI', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 /* Home posts list */

@@ -24,7 +24,7 @@ th {
     text-align: center !important;
 }
 
-// Color overlay on hover but not on heading
+/* Color overlay on hover but not on heading */
 tr:hover {
     background-color: #f5f5f5;
 }
@@ -32,7 +32,7 @@ table thead tr:hover {
     background-color: #ffffff00;
 }
 
-// Border visibility and side padding
+/* Border visibility and side padding */
 table tr:first-child th {
     border-top: 0;
     border-bottom: 0;
