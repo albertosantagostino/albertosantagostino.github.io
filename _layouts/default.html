@@ -13,40 +13,26 @@
 
 <body>
     <nav>
-        <div>
-            <div class="floatleft">
-                <ul>
-                    <li><a href="{{ page.lang | replace: 'it', '/index_it' | replace: 'en', '/'}}">Blog 📖</a></li>
-                    <li><a href="{{ page.lang | replace: 'it', '/about/index_it' | replace: 'en', '/about'}}">About
-                            👤</a>
-                    <li><a href="{{ page.lang | replace: 'it', '/rss/index_it' | replace: 'en', '/rss'}}">Feed 📣</a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="floatright">
-                <ul class="language">
-                    {% assign pages=site.pages | where:'ref', page.ref | sort: 'lang' %}
-                    {% for page in pages %}
-                    <li>
-                        <a href="{{ page.url }}"
-                            class="{{ page.lang }}">{{ page.lang | replace: 'it', '🇮🇹' | replace: 'en', '🇬🇧'}}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-                <ul class="language">
-                    {% assign posts=site.posts | where:'ref', page.ref | sort: 'lang' %}
-                    {% for post in posts %}
-                    <li>
-                        <a href="{{ post.url }}"
-                            class="{{ post.lang }}">{{ post.lang | replace: 'it', '🇮🇹' | replace: 'en', '🇬🇧'}}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="{{ page.lang | replace: 'it', '/index_it' | replace: 'en', '/'}}">Blog 📖</a></li>
+                <li><a href="{{ page.lang | replace: 'it', '/about/index_it' | replace: 'en', '/about'}}">About 👤</a>
+                <li><a href="{{ page.lang | replace: 'it', '/rss/index_it' | replace: 'en', '/rss'}}">Feed 📣</a></li>
+                {% assign pages=site.pages | where:'ref', page.ref | sort: 'lang' %}
+                {% for page in pages %}
+                <li class="language">
+                    <a href="{{ page.url }}"
+                        class="{{ page.lang }}">{{ page.lang | replace: 'it', '🇮🇹' | replace: 'en', '🇬🇧'}}</a></li>
+                {% endfor %}
+                {% assign posts=site.posts | where:'ref', page.ref | sort: 'lang' %}
+                {% for post in posts %}
+                <li class="language">
+                    <a href="{{ post.url }}"
+                        class="{{ post.lang }}">{{ post.lang | replace: 'it', '🇮🇹' | replace: 'en', '🇬🇧'}}</a></li>
+                {% endfor %}
+            </ul>
         </div>
     </nav>
-
 
     <div class="title">
         <a href={{ site.url }}><h1>A pile of endless side projects</h1></a>

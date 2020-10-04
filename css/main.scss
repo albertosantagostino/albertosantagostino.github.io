@@ -5,16 +5,15 @@
 @import "table.css";
 
 /* Variables */
-$home_buttons: #777777;
+$home_links: #226699;
 $subtitle: #acacac;
 $hl: #d5d5d5;
 $footer_links: #bbbbbb;
 $footer_language: #a1a1a1;
-$home_posts: #226699;
 $desktop_video_width: 650px;
 $mobile_video_width: 360px;
 $video_ratio: 0.5625;
-$home_spacing: 20px;
+$home_vertical_spacing: 10px;
 
 /* Desktop */
 @media (min-width: 1000px) {
@@ -23,13 +22,13 @@ $home_spacing: 20px;
         width: 60%;
         max-width: 90%;
     }
-    p {
+    p, ul li {
         font-size: 1.2em;
     }
     table {
         font-size: 1.1em;
     }
-    p, code{
+    p, code, ul li{
         line-height: 1.4em;
     }
     h1 {
@@ -38,13 +37,13 @@ $home_spacing: 20px;
     h2 {
         font-size: 1.8em;
     }
-    h3 {
+    h3, .centerbigtext {
         font-size: 1.5em;
     }
     h4 {
         font-size: 1.3em;
     }
-    h5 {
+    .container > h5:nth-child(2) {
         margin-top: -25px;
         font-size: 1em;
     }
@@ -59,24 +58,16 @@ $home_spacing: 20px;
         margin-top: -25px;
         font-size: 1.3em;
     }
-    nav {
-        padding-bottom : 65px;
-    }
     nav ul {
         font-size: 1.1em;
     }
-    ul.posts li small {
-        font-size: .8em;
+    ul.posts {
+        padding-left: 25px;
     }
-    ul.posts a {
-        font-size: 1.5em;
-    }
-    li {
-        font-size: 1.2em;
-        margin: 5px 0;
-    }
-    ul li{
-        line-height: 1.4em;
+    ul.posts li {
+        small { font-size: .8em;  }
+        a     { font-size: 1.5em; }
+        padding-bottom: 5px;
     }
     .footnotes {
         font-size: 0.6em;
@@ -84,7 +75,7 @@ $home_spacing: 20px;
     .links a {
         font-size: 1em;
     }
-    .language li {
+    .language {
         font-size: 1.2em;
         margin-top: 0px;
     }
@@ -105,13 +96,13 @@ $home_spacing: 20px;
         margin: 10px auto;
         width: 90%;
     }
-    p {
+    p, ul li, .centerbigtext {
         font-size: 1.1em;
     }
     table {
         font-size: 1.1em;
     }
-    p, code {
+    p, code, ul li {
         line-height: 1.5em;
     }
     h1 {
@@ -126,7 +117,7 @@ $home_spacing: 20px;
     h4 {
         font-size: 1.1em;
     }
-    h5 {
+    .container > h5:nth-child(2) {
         margin-top:-15px;
         font-size: 1em;
     }
@@ -141,24 +132,16 @@ $home_spacing: 20px;
         margin-top:-15px;
         font-size: .9em;
     }
-    nav {
-        padding-bottom : 45px;
-    }
     nav ul {
-        font-size: .8em;
+        font-size: 0.9em;
     }
-    ul li{
-        line-height: 1.5em;
+    ul.posts {
+        padding-left: 10px;
     }
-    ul.posts li small {
-        font-size: .8em;
-    }
-    ul.posts a {
-        font-size: 1.1em;
-    }
-    .posts li {
-        font-size: 1.2em;
-        margin: 5px 0;
+    ul.posts li {
+        small { font-size: .8em;  }
+        a     { font-size: 1.2em; }
+        padding-bottom: 0;
     }
     .footnotes {
         font-size: 0.6em;
@@ -166,7 +149,7 @@ $home_spacing: 20px;
     .links a {
         font-size: 1em;
     }
-    .language li {
+    .language {
         font-size: 1.2em;
         margin-top: 0px;
     }
@@ -181,9 +164,7 @@ $home_spacing: 20px;
     }
 }
 
-
 /* Paragraph and font family */
-
 p, h1, h2, h3, h4, h5, small, a, nav ul, footer ul, li, th, td {
     font-family: 'Segoe UI', 'SegoeUI', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 }
@@ -193,7 +174,10 @@ div {
     text-justify: inter-word;
 }
 div.title {
-    border-bottom: 2.0px solid $hl;
+    border-bottom: 1.2px solid $hl;
+}
+div.footnotes, footer  {
+    border-top: 1.2px solid $hl;
 }
 
 figcaption p {
@@ -209,7 +193,7 @@ figcaption p {
     text-decoration: none;
 }
 .title h5 {
-    margin-bottom: $home_spacing;
+    margin-bottom: $home_vertical_spacing;
     color: #12385573;
 }
 
@@ -221,7 +205,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Quoteblock */
+/* Quotes */
 blockquote {
     padding: 5px 50px ;
     background: #fafafa;
@@ -236,18 +220,17 @@ blockquote {
 }
 
 /* Subtitle, date in posts */
-h5, small {
+.container > h5:nth-child(2), ul.posts li small {
     color: $subtitle;
 }
 
-/* Navigation bar and footer*/
-nav ul {
+/* Navigation bar*/
+nav .navbar ul {
     font-weight: bold;
     li {
-        padding-right: $home_spacing;
+        padding-right: $home_vertical_spacing;
     }
 }
-
 nav ul, footer ul {
     padding-left: 0px;
     list-style: none;
@@ -255,19 +238,11 @@ nav ul, footer ul {
         display: inline;
     }
 }
-
-ul li {
-    font-size: 1.2em;
-    ul li {
-        font-size: 1em;
-    }
-}
-
 nav a {
-    text-decoration: none;
-    color: $home_buttons;
+    color: $home_links;
 }
 nav a:hover {
+    color: black;
     text-decoration: none;
 }
 .floatright {
@@ -277,19 +252,17 @@ nav a:hover {
     float: left;
 }
 
-div.footnotes  {
-    border-top: 1.2px solid $hl;
-}
-
+/* Footnotes */
 .footnotes {
     color: #555555;
 }
 
-footer {
-    border-top: 1.2px solid $hl;
-}
+/* Footer */
 .bottomname {
     opacity: 0.4;
+}
+.icon {
+    opacity: 0.3;
 }
 
 /* Language selector */
@@ -298,27 +271,25 @@ footer {
     color: $footer_links;
     margin-right: 7px;
 }
-.language li {
+.language  {
     float: right;
 }
 a.it:lang(it), a.en:lang(en) {
     opacity: 0.4;
 }
 
-.icon {
-    opacity: 0.3;
-}
-
 /* Home posts list */
 ul.posts {
-    margin: $home_spacing 0;
+    margin-top: $home_vertical_spacing;
+    margin-bottom: $home_vertical_spacing;
 }
 ul.posts li {
     list-style: none;
 }
 ul.posts a {
+    display: block;
     font-weight: bold;
-    color: $home_posts;
+    color: $home_links;
 }
 
 /* Responsive images */
@@ -338,4 +309,9 @@ sup, sub {
 }
 sub {
     top: 0.4em;
+}
+
+/* Misc */
+.centerbigtext {
+    text-align: center;
 }
