@@ -11,7 +11,7 @@ I would like to talk about another side project that kept me busy lately (apart 
 ## Fantastic bots and where to find them
 
 Lately I developed four **Telegram bots** using the really nice library [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot).  
-For the ones that don't know what a bot is, refer to [this page ontelegram.org](https://core.telegram.org/bots). Briefly, in this context a bot is an application able to interact with users/groups directly on Telegram, answering to messages and accepting commands.
+For the ones that don't know what a Telegram bot is, refer to [this page](https://core.telegram.org/bots). Briefly, in this context a bot is an application able to interact with users/groups directly on Telegram, answering to messages and accepting commands.
 
 I will probably write about some of these bots in the future, for now I just want to talk about their hosting and management.
 
@@ -27,7 +27,7 @@ A bot is a standard application (in this specific case, a Python script). To int
 
 For different reasons[^1] I choose the second solution: hosting using a [**Raspberry PI Zero W**](https://www.raspberrypi.org/products/raspberry-pi-zero-w/). With 512MB of RAM and a 1GHz single-core CPU, it's not exactly a [TOP500](https://it.wikipedia.org/wiki/TOP500) PC, but considering the low amount of resources that my bots need, it's enough. The key points of the Zero are the small size, the built-in WiFi and the possibility to powering it directly through Micro-USB (using a simple phone charger).
 
-{: style="text-align: center;"}
+{: style="text-align: center; padding: 0 15%;"}
 <img src="{{site.url | append: '/media/20200628/raspberrypizero.jpg'}}" title="Raspberry PI Zero W, pasta for scale" class="responsive" onclick="window.open(this.src)">
 
 ### Software
@@ -57,7 +57,7 @@ All done. It suffices to turn the Raspberry on, forget it, to have everything wo
 
 Great.
 
-{: style="text-align: center; padding: 0 15%;"}
+{: style="text-align: center; padding: 0 20%;"}
 <img src="{{site.url | append: '/media/20200628/jobdone.jpg'}}" title="Everything done, let's go home" class="responsive" onclick="window.open(this.src)">
 
 There is just a small detail: often[^2] things don't go as planned, therefore it would be nice to be able to restart the bots, to check theirs logs, to kill them if needed, and so on. All things easy to do when connected to the same network of the Raspberry, more complex from somewhere else.[^3]
@@ -81,7 +81,7 @@ The ones that have already used Python know that there is a library for every ne
 
 The library is called systemd-servicehandler, or just  **servicehandler**.[^6]
 
-{: style="text-align: center;"}
+{: style="text-align: center; padding: 0 15%;"}
 <img src="{{site.url | append: '/media/20200628/servicehandler_banner.png'}}" title="Lo stupendo banner di servicehandler" class="responsive" onclick="window.open(this.src)">
 
 (I'm very proud of the banner)

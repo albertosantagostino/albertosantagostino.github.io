@@ -11,7 +11,7 @@ Mi piacerebbe parlare di un altro progettino che mi ha tenuto occupato ultimamen
 ## Bot fantastici e dove hostarli
 
 Ultimamente ho sviluppato quattro **bot di Telegram** usando la stupenda libreria [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot).  
-Per chi non sa cosa sia un bot rimando a [questa pagina su telegram.org](https://core.telegram.org/bots) (in inglese). Brevemente, in questo contesto un bot è un'applicazione in grado di interagire con utenti/gruppi direttamente su Telegram, rispondendo a messaggi ed accettando comandi.
+Per chi non sa cosa sia un bot di Telegram rimando a [questa pagina](https://core.telegram.org/bots) (in inglese). Brevemente, in questo contesto un bot è un'applicazione in grado di interagire con utenti/gruppi direttamente su Telegram, rispondendo a messaggi ed accettando comandi.
 
 Alcuni di questi bot saranno probabilmente oggetto di post futuri, per ora però voglio parlare del loro hosting e della loro gestione.
 
@@ -27,7 +27,7 @@ Un bot è un'applicazione come un'altra (in questo caso specifico, uno script Py
 
 Per diversi motivi[^1] ho optato per la seconda soluzione: hosting su [**Raspberry PI Zero W**](https://www.raspberrypi.org/products/raspberry-pi-zero-w/). Con 512MB di RAM ed una CPU single core da 1GHz, non è esattamente un computer da [TOP500](https://it.wikipedia.org/wiki/TOP500), ma considerando le poche risorse di cui necessitano i miei bot, è abbastanza. I punti forti dello Zero sono l'ingombro minimo, il modulo WiFi integrato e la possibilità di alimentarlo tramite Micro-USB (utilizzando un semplice caricatore da cellulare).
 
-{: style="text-align: center;"}
+{: style="text-align: center; padding: 0 15%;"}
 <img src="{{site.url | append: '/media/20200628/raspberrypizero.jpg'}}" title="Raspberry PI Zero W, pasta for scale" class="responsive" onclick="window.open(this.src)">
 
 ### Software
@@ -56,7 +56,7 @@ Tutto fatto. Basta avviare il Raspberry, dimenticarsene, ed avere tutto funziona
 
 Fantastico.
 
-{: style="text-align: center; padding: 0 15%;"}
+{: style="text-align: center; padding: 0 20%;"}
 <img src="{{site.url | append: '/media/20200628/jobdone.jpg'}}" title="Tutto fatto, andiamo a casa" class="responsive" onclick="window.open(this.src)">
 
 Non fosse per un piccolo dettaglio: spesso[^2] le cose non vanno come previsto, quindi potrebbe essere utile dover riavviare i bot, controllare i loro log, terminarli forzatamente se necessario, e così via. Tutte cose facili da effettuare quando connessi alla stessa rete del Raspberry, più complesse da remoto.[^3]
@@ -81,7 +81,7 @@ Ho cercato in giro qualcosa che facesse al caso mio. Non avendo trovato nulla ch
 
 La libreria si chiama systemd-servicehandler, o più semplicemente **servicehandler**.[^6]
 
-{: style="text-align: center;"}
+{: style="text-align: center; padding: 0 15%;"}
 <img src="{{site.url | append: '/media/20200628/servicehandler_banner.png'}}" title="Lo stupendo banner di servicehandler" class="responsive" onclick="window.open(this.src)">
 
 (Sono molto orgoglioso del banner)
