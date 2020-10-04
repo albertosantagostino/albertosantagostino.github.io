@@ -315,3 +315,8 @@ sub {
 .centerbigtext {
     text-align: center;
 }
+
+ul li ul li, ul li ul li ul li {
+    font-size: 100%;
+    list-style-type: disc;
+}
