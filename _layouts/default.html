@@ -21,14 +21,12 @@
                 {% assign pages=site.pages | where:'ref', page.ref | sort: 'lang' %}
                 {% for page in pages %}
                 <li class="language">
-                    <a href="{{ page.url }}"
-                        class="{{ page.lang }}">{{ page.lang | replace: 'it', '🇮🇹' | replace: 'en', '🇬🇧'}}</a></li>
+                    <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang | replace: 'it', '🇮🇹' | replace: 'en', '🇬🇧'}}</a></li>
                 {% endfor %}
                 {% assign posts=site.posts | where:'ref', page.ref | sort: 'lang' %}
                 {% for post in posts %}
                 <li class="language">
-                    <a href="{{ post.url }}"
-                        class="{{ post.lang }}">{{ post.lang | replace: 'it', '🇮🇹' | replace: 'en', '🇬🇧'}}</a></li>
+                    <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang | replace: 'it', '🇮🇹' | replace: 'en', '🇬🇧'}}</a></li>
                 {% endfor %}
             </ul>
         </div>
@@ -45,7 +43,7 @@
 
     <footer>
         <div>
-            <p class="floatleft links">
+            <p class="links" style="float: left">
                 <a href="https://github.com/albertosantagostino">
                     <img class="icon" src='/media/icons/github_logo.png' style='vertical-align: middle' alt='GitHub logo' height=20></a>
                 <a href="https://www.linkedin.com/in/alberto-santagostino-4bb081b1">
@@ -53,7 +51,12 @@
                 <a href="https://twitter.com/albsantagostino">
                    <img class="icon" src='/media/icons/twitter_logo.png' style='vertical-align: middle' alt='LinkedIn logo' height=20></a>
             </p>
-            <p class="floatright bottomname">Alberto Santagostino<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer" ><img alt="Creative Commons License" style="padding-left:1em; border-width:0; vertical-align: middle;" src="/media/icons/cc_license.png" /></p>
+            <p class="bottomname" style="float: right">
+                <a href="{{ page.lang | replace: 'it', '/about/index_it' | replace: 'en', '/about'}}">Alberto Santagostino</a>
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer" >
+                    <img alt="Creative Commons License" style="padding-left:1em; border-width:0; vertical-align: middle;"
+                    src="/media/icons/cc_license.png" />
+            </p>
         </div>
     </footer>
 </body>

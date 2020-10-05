@@ -22,33 +22,25 @@ $home_vertical_spacing: 10px;
         width: 60%;
         max-width: 90%;
     }
-    p, ul li {
-        font-size: 1.2em;
-    }
-    table {
-        font-size: 1.1em;
-    }
+
+    p, ul li   { font-size: 1.2em; }
+    table      { font-size: 1.1em; }
+    h1         { font-size: 2.2em; }
+    h2         { font-size: 1.8em; }
+    h3         { font-size: 1.5em; }
+    h4         { font-size: 1.3em; }
+    small      { font-size: 0.7em; }
+    nav ul     { font-size: 1.1em; }
+    .footnotes { font-size: 0.8em; }
+    .links a   { font-size: 1em;   }
+    .centerbig { font-size: 1.5em; }
+
     p, code, ul li{
         line-height: 1.4em;
-    }
-    h1 {
-        font-size: 2.2em;
-    }
-    h2 {
-        font-size: 1.8em;
-    }
-    h3, .centerbigtext {
-        font-size: 1.5em;
-    }
-    h4 {
-        font-size: 1.3em;
     }
     .container > h5:nth-child(2) {
         margin-top: -25px;
         font-size: 1em;
-    }
-    small {
-        font-size: 0.7em;
     }
     .title h1 {
         margin-top: 0px;
@@ -57,9 +49,6 @@ $home_vertical_spacing: 10px;
     .title h5 {
         margin-top: -25px;
         font-size: 1.3em;
-    }
-    nav ul {
-        font-size: 1.1em;
     }
     ul.posts {
         padding-left: 25px;
@@ -69,24 +58,18 @@ $home_vertical_spacing: 10px;
         a     { font-size: 1.5em; }
         padding-bottom: 5px;
     }
-    .footnotes {
-        font-size: 0.6em;
-    }
-    .links a {
-        font-size: 1em;
-    }
     .language {
         font-size: 1.2em;
         margin-top: 0px;
+    }
+    .bottomname {
+        font-size: 1em;
+        padding-top: 5px;
     }
     .video_container {
         max-width: 100%;
         width: $desktop_video_width;
         height: $desktop_video_width * $video_ratio;
-    }
-    .bottomname {
-        font-size: 1em;
-        padding-top: 5px;
     }
 }
 
@@ -96,44 +79,33 @@ $home_vertical_spacing: 10px;
         margin: 10px auto;
         width: 90%;
     }
-    p, ul li, .centerbigtext {
-        font-size: 1.1em;
-    }
-    table {
-        font-size: 1.1em;
-    }
+
+    p, ul li   { font-size: 1.1em; }
+    table      { font-size: 1.1em; }
+    h1         { font-size: 1.4em; }
+    h2         { font-size: 1.3em; }
+    h3         { font-size: 1.2em; }
+    h4         { font-size: 1.1em; }
+    small      { font-size: 0.7em; }
+    nav ul     { font-size: 0.9em; }
+    .footnotes { font-size: 0.7em; }
+    .links a   { font-size: 1em;   }
+    .centerbig { font-size: 1.1em; }
+
     p, code, ul li {
         line-height: 1.5em;
-    }
-    h1 {
-        font-size: 1.4em;
-    }
-    h2 {
-        font-size: 1.3em;
-    }
-    h3 {
-        font-size: 1.2em;
-    }
-    h4 {
-        font-size: 1.1em;
     }
     .container > h5:nth-child(2) {
         margin-top:-15px;
         font-size: 1em;
     }
-    small {
-        font-size: 0.7em;
-    }
     .title h1 {
-        margin-top: 5px;
         font-size: 1.3em;
+        margin-top: 5px;
     }
     .title h5 {
-        margin-top:-15px;
         font-size: .9em;
-    }
-    nav ul {
-        font-size: 0.9em;
+        margin-top:-15px;
     }
     ul.posts {
         padding-left: 10px;
@@ -143,24 +115,18 @@ $home_vertical_spacing: 10px;
         a     { font-size: 1.2em; }
         padding-bottom: 0;
     }
-    .footnotes {
-        font-size: 0.6em;
-    }
-    .links a {
-        font-size: 1em;
-    }
     .language {
         font-size: 1.2em;
         margin-top: 0px;
+    }
+    .bottomname {
+        font-size: 0.7em;
+        padding-top: 13px;
     }
     .video_container {
         max-width: 100%;
         width: $mobile_video_width;
         height: $mobile_video_width * $video_ratio;
-    }
-    .bottomname {
-        font-size: 0.7em;
-        padding-top: 13px;
     }
 }
 
@@ -169,6 +135,7 @@ p, h1, h2, h3, h4, h5, small, a, nav ul, footer ul, li, th, td {
     font-family: 'Segoe UI', 'SegoeUI', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 }
 
+/* Divs */
 div {
     text-align: justify;
     text-justify: inter-word;
@@ -178,10 +145,6 @@ div.title {
 }
 div.footnotes, footer  {
     border-top: 1.2px solid $hl;
-}
-
-figcaption p {
-    font-size: 1.2em;
 }
 
 /* Title */
@@ -245,12 +208,6 @@ nav a:hover {
     color: black;
     text-decoration: none;
 }
-.floatright {
-    float: right;
-}
-.floatleft {
-    float: left;
-}
 
 /* Footnotes */
 .footnotes {
@@ -259,7 +216,12 @@ nav a:hover {
 
 /* Footer */
 .bottomname {
-    opacity: 0.4;
+    opacity: 0.5;
+}
+.bottomname a:hover, .bottomname a:visited {
+    text-decoration: none;
+    color: black;
+    opacity: 100%;
 }
 .icon {
     opacity: 0.3;
@@ -312,10 +274,9 @@ sub {
 }
 
 /* Misc */
-.centerbigtext {
+.centerbig {
     text-align: center;
 }
-
 ul li ul li, ul li ul li ul li {
     font-size: 100%;
     list-style-type: disc;
