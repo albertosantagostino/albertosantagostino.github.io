@@ -50,7 +50,7 @@ A couple of interesting things can be observed only from the color: the page on 
 
 Exploring the heatmap, strange cuisine-language combinations can be found. For example:
 
-* The page on the [Greek cuisine in Greek](https://el.wikipedia.org/wiki/%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CE%AE_%CE%BA%CE%BF%CF%85%CE%B6%CE%AF%CE%BD%CE%B1) (a "diagonal" entry) has a length of 25000 characters (more or less 7 A4 sheets printed using font size 12), but the page on the [German cuisine in Greek](https://el.wikipedia.org/wiki/%CE%93%CE%B5%CF%81%CE%BC%CE%B1%CE%BD%CE%B9%CE%BA%CE%AE_%CE%BA%CE%BF%CF%85%CE%B6%CE%AF%CE%BD%CE%B1) is 93000 characters long! Maybe Greeks love German cuisine so much that they are not interested in their own?[^8] `¯\\_(ツ)_/¯`
+* The page on the [Greek cuisine in Greek](https://el.wikipedia.org/wiki/%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CE%AE_%CE%BA%CE%BF%CF%85%CE%B6%CE%AF%CE%BD%CE%B1) (a "diagonal" entry) has a length of 25000 characters (more or less 7 A4 sheets printed using font size 12), but the page on the [German cuisine in Greek](https://el.wikipedia.org/wiki/%CE%93%CE%B5%CF%81%CE%BC%CE%B1%CE%BD%CE%B9%CE%BA%CE%AE_%CE%BA%CE%BF%CF%85%CE%B6%CE%AF%CE%BD%CE%B1) is 93000 characters long! Maybe Greeks love German cuisine so much that they are not interested in their own?[^8] `¯\_(ツ)_/¯`
 * The page on the [Dutch cuisine in Polish](https://pl.wikipedia.org/wiki/Kuchnia_holenderska) is really long (130000 characters)!
 * The page on the [American (USA) cuisine in French](https://fr.wikipedia.org/wiki/Cuisine_des_%C3%89tats-Unis) (218000 characters) is three times longer than the page on the [French cuisine in French](https://fr.wikipedia.org/wiki/Cuisine_fran%C3%A7aise)! (70000 characters)
 
