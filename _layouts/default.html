@@ -16,7 +16,6 @@
         <div class="navbar">
             <ul>
                 <li><a href="{{ page.lang | replace: 'it', '/index_it' | replace: 'en', '/'}}">Blog 📖</a></li>
-                <li><a href="{{ page.lang | replace: 'it', '/about/index_it' | replace: 'en', '/about'}}">About 👤</a>
                 <li><a href="{{ page.lang | replace: 'it', '/rss/index_it' | replace: 'en', '/rss'}}">Feed 📣</a></li>
                 {% assign pages=site.pages | where:'ref', page.ref | sort: 'lang' %}
                 {% for page in pages %}
@@ -34,7 +33,7 @@
 
     <div class="title">
         <a href={{ site.url }}><h1>A pile of endless side projects</h1></a>
-        <h5>A tiny blog on stuff I do</h5>
+        <h5>A tiny (and dusty) blog on stuff I do</h5>
     </div>
 
     <div class="container">
@@ -48,8 +47,6 @@
                     <img class="icon" src='/media/icons/github_logo.png' style='vertical-align: middle' alt='GitHub logo' height=20></a>
                 <a href="https://www.linkedin.com/in/alberto-santagostino-4bb081b1">
                     <img class="icon" src='/media/icons/linkedin_logo.png' style='vertical-align: middle' alt='LinkedIn logo' height=20></a>
-                <a href="https://twitter.com/albsantagostino">
-                   <img class="icon" src='/media/icons/twitter_logo.png' style='vertical-align: middle' alt='LinkedIn logo' height=20></a>
             </p>
             <p class="bottomname" style="float: right">
                 <a href="{{ page.lang | replace: 'it', '/about/index_it' | replace: 'en', '/about'}}">Alberto Santagostino</a>
