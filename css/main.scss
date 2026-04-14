@@ -23,20 +23,21 @@ $home_vertical_spacing: 10px;
         max-width: 90%;
     }
 
-    p, ul li   { font-size: 1.2em; }
+    p          { font-size: 1.2em; }
+    ul li      { font-size: 1.2em; }
     table      { font-size: 1.1em; }
-    h1         { font-size: 2.2em; }
+    h1         { font-size: 2.2em; line-height: 1em;}
     h2         { font-size: 1.8em; }
     h3         { font-size: 1.5em; }
     h4         { font-size: 1.3em; }
     small      { font-size: 0.7em; }
     nav ul     { font-size: 1.1em; }
-    .footnotes { font-size: 0.8em; }
+    .footnotes { font-size: 0.9em; }
     .links a   { font-size: 1em;   }
     .centerbig { font-size: 1.5em; }
 
     p, code, ul li{
-        line-height: 1.4em;
+        line-height: 1.5em;
     }
     .container > h5:nth-child(2) {
         margin-top: -25px;
@@ -192,6 +193,7 @@ nav .navbar ul {
     font-weight: bold;
     li {
         padding-right: $home_vertical_spacing;
+        font-size: 1em
     }
 }
 nav ul, footer ul {
