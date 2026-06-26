@@ -146,9 +146,9 @@ Le cose che ho scritto in questo post non suoneranno "giuste" a tutti voi. A mol
 
 ## Ed ora? Il senso di questo post?
 
-Non mi aspetto di aggiustare il mondo con un post, ma la situazione corrente, con aziende che spingono per l'utilizzo dell'AI ovunque ed alcune persone super entusiaste è veramente.
+Non mi aspetto di aggiustare il mondo con un post, ma la situazione corrente, con aziende che spingono per l'utilizzo dell'AI ovunque ed alcune persone super entusiaste è veramente preoccupante.
 
-Personalmente, non uso l'AI. Il mio suggerimento per voi è di fare lo stesso.
+Personalmente, non uso l'AI. Il mio suggerimento è semplicemente di fare lo stesso.
 
 Se non per il mio "punto principale" (diventare stupidi), potete rileggere la <A href="#paletti-e-presupposti-finali">sezione sui presupposti</A>. Tutti gli *"ignorerò..."* che ho ipotizzato sono in realtà **problemi reali**, sufficientemente convincenti per rivalutare l'utilizzo di tutti questi strumenti che ci vengono propinati.
 
